@@ -209,6 +209,7 @@ def _display_gpu_selection(gpus: Dict[int, Dict[str, Any]], selected_gpus: List[
             total=total_memory,
             completed=memory_used,
             complete_style=memory_color,
+            finished_style=memory_color,
         )
 
         memory_used_gb = memory_used / 1024**3
@@ -239,6 +240,7 @@ def _display_gpu_selection(gpus: Dict[int, Dict[str, Any]], selected_gpus: List[
             total=100,
             completed=gpu_info["utilization"],
             complete_style=util_color,
+            finished_style=util_color,
         )
 
         util_col = Table.grid("" * 2, padding=(0, 1))
