@@ -1,3 +1,9 @@
+## v0.1.3 (2025-04-17)
+
+### Fix
+
+- fix typo in checking occupy
+
 ## v0.1.2 (2025-04-17)
 
 ### Fix
