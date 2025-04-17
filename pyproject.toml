@@ -1,6 +1,6 @@
 [project]
 name = "gx-cli"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple CLI tool that runs your commands once GPUs are available."
 readme = "README.md"
 requires-python = ">=3.11"
