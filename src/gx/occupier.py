@@ -28,7 +28,7 @@ def check_and_import(module_name: str) -> Any:
             Panel.fit(
                 f"[red]Error: {module_name} is required for GPU occupation[/red]\n"
                 f"You may want to install the missing dependencies by installing the `occupy` extra:\n"
-                f"uv tool install 'grun[occupy]'",
+                f"uv tool install 'gx\[occupy\]'",
                 title="Missing Dependencies",
             )
         )

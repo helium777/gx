@@ -16,7 +16,6 @@ from typing import Dict, Any
 
 from .notify import get_notifier
 from .gpu import GpuMonitor
-from .occupier import occupy_gpu
 from . import __version__
 from .settings import Settings
 from .globals import CONFIG_PATH
@@ -115,6 +114,8 @@ def cli(
                 title="Occupier Started",
                 message=f"GPU occupier started on GPUs: {available_gpu_indices}",
             )
+
+        from .occupier import occupy_gpu
 
         occupy_gpu(
             memory=required_memory_bytes,
