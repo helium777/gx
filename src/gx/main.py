@@ -71,10 +71,13 @@ def cli(
         return
 
     if not memory:
-        console.print(
-            "[red]Error: Required GPU memory is not specified. Use --help for more information.[/red]"
-        )
-        sys.exit(1)
+        if not exclusive:
+            console.print(
+                "[red]Error: Required GPU memory is not specified. Use --help for more information.[/red]"
+            )
+            sys.exit(1)
+        else:
+            memory = 0.0
 
     if occupy and command:
         console.print(
