@@ -1,3 +1,9 @@
+## v0.1.4 (2025-04-17)
+
+### Fix
+
+- set required VRAM to 0 in exclusive mode if not provided
+
 ## v0.1.3 (2025-04-17)
 
 ### Fix
